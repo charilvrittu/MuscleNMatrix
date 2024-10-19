@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    color: white;
+    font-family: "Kanit", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Ensure space between title and links */
+    align-items: center;
+    padding: 10px 20px; /* Padding for better spacing */
+}
+
+nav h1 {
+    font-size: 50px;
+}
+
+nav span {
+    color: red;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+ul li {
+    margin-inline: 15px; /* Space between links */
+}
+
+ul button {
+    width: 140px;
+    height: 40px;
+    background-color: rgb(244, 11, 11);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul button:hover {
+    background-color: rgb(200, 7, 7);
+    transition: background-color 0.3s ease;
+}
+
+ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    border-bottom: 4px solid rgb(200, 7, 7);
+    border-radius: 3px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto; /* Center container with automatic margins */
+    max-width: 800px; /* Limit the maximum width */
+    padding: 20px; /* Padding for the container */
+}
+
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 24px;
+    margin: 20px auto;
+}
+
+.home-details {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+.home-details h3 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.home-details p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.home-details ul {
+    list-style-type: disc; /* Bullet points for the list */
+    margin: 10px 0 20px 20px; /* Margin for the list */
+}
+
+.home-details ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Trainers Section */
+.trainers {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.trainers h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.trainer-list {
+    display: flex;
+    justify-content: space-around; /* Even spacing for trainer cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+.trainer {
+    background-color: rgba(0, 0, 0, 0.7); /* Background for trainer cards */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px; /* Fixed width for trainer cards */
+    text-align: center;
+}
+
+.trainer img {
+    width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 5px; /* Slight rounding of image corners */
+}
+
+.trainer h4 {
+    margin: 10px 0; /* Space above and below trainer names */
+}
+
+.trainer p {
+    font-size: 16px; /* Font size for trainer descriptions */
+}
+.plan-details {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+.plan {
+    margin: 20px 0; /* Space between plans */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for plans */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.plan h4 {
+    font-size: 24px; /* Font size for plan names */
+    margin-bottom: 10px; /* Space below plan names */
+}
+
+.plan ul {
+    list-style-type: disc; /* Bullet points for the list */
+    margin: 10px 0 0 20px; /* Margin for the list */
+}
+
+.plan ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+body {
+    background-color: #1c1c1c; /* Dark background for contrast */
+    color: white;
+}
+
+.container {
+    max-width: 800px; /* Limit container width */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Padding around the content */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+h2 {
+    text-align: center; /* Centered heading */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-details,
+.contact-form,
+.social-media {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.contact-details h3,
+.contact-form h3,
+.social-media h3 {
+    font-size: 28px; /* Larger subheadings */
+    margin-bottom: 15px;
+}
+
+.contact-details ul,
+.social-media ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.contact-details li,
+.social-media li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 18px; /* Font size for contact details */
+}
+
+.contact-form label {
+    display: block; /* Block-level for spacing */
+    margin-top: 15px; /* Space above labels */
+    font-size: 18px; /* Font size for labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside input fields */
+    margin-top: 5px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: white; /* Text color */
+}
+
+.contact-form button {
+    margin-top: 10px; /* Space above button */
+    background-color: rgb(244, 11, 11); /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 12px 20px; /* Padding inside button */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 18px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background-color: rgb(248, 43, 43); /* Darker red on hover */
+}
+
+.social-media ul {
+    text-align: center; /* Center social media links */
+}
+
+.social-media a {
+    color: rgb(244, 11, 11); /* Red color for links */
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Font size for links */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.social-media a:hover {
+    color: white; /* Change color on hover */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    color: white;
+    font-family: "Kanit", sans-serif;
+}
+
+/* Other styles as provided ... */
+
+.container {
+    max-width: 800px; /* Limit container width */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Padding around the content */
+    background-color: rgba(88, 82, 82, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Additional styles for elements as provided ... */
+.container {
+    text-align: center;
+    margin-top: 50px; /* Space above the container */
+}
+
+.workout-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center align workout cards */
+}
+
+.workout {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for workout cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside workout cards */
+    margin: 15px; /* Margin around workout cards */
+    width: 200px; /* Fixed width for workout cards */
+    text-align: center; /* Center text */
+}
+
+.workout img {
+    width: 100%; /* Responsive image */
+    border-radius: 5px; /* Slight rounding of image corners */
+}
+
+.workout h3 {
+    margin: 10px 0; /* Space above and below workout names */
+    color: white; /* Text color for workout names */
+}
+.offers {
+    margin-top: 50px; /* Space above offers section */
+}
+
+.offer-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center align offer cards */
+}
+
+.offer {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for offer cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside offer cards */
+    margin: 15px; /* Margin around offer cards */
+    width: 250px; /* Fixed width for offer cards */
+    text-align: center; /* Center text */
+}
+
+.offer h3 {
+    margin: 10px 0; /* Space above and below offer titles */
+    color: white; /* Text color for offer titles */
+}
+
+.offer p {
+    margin: 5px 0; /* Space above and below offer descriptions */
+    color: white; /* Text color for offer descriptions */
+    font-size: 16px; /* Font size for offer descriptions */
+}
+.about-us {
+    margin-top: 50px; /* Space above the About Us section */
+    text-align: left; /* Align text to the left */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.about-us h2 {
+    margin-bottom: 20px; /* Space below the section heading */
+    color: white; /* Text color for section heading */
+    font-size: 40px; /* Increased font size for heading */
+}
+
+.about-us p {
+    margin: 10px 0; /* Space above and below paragraphs */
+    color: white; /* Text color for paragraphs */
+    font-size: 22px; /* Increased font size for paragraphs */
+}
+.competitions {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(61, 57, 57, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+}
+
+.competitions h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.competition-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.competition {
+    padding: 15px;
+    background-color: rgba(93, 87, 87, 0.1);
+    border-radius: 8px;
+}
+
+.competition h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.competition p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+
